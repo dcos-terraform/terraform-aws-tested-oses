@@ -27,7 +27,7 @@ variable "aws_default_os_user" {
 
 # AWS recommends all HVM vs PV. HVM Below.
 variable "aws_ami" {
-  description = "AMI that will be used for the instances instead of Mesosphere provided AMIs"
+  description = "AMI that will be used for the instances instead of the Mesosphere chosen default images. Custom AMIs must fulfill the Mesosphere DC/OS system-requirements: See https://docs.mesosphere.com/1.12/installing/production/system-requirements/"
   type        = "map"
 
   default = {
