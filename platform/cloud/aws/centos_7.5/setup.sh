@@ -18,7 +18,7 @@ ExecStart=
 ExecStart=/usr/bin/dockerd
 EOF
 
-sudo yum install -y yum-utils \
+sudo yum install -y -q yum-utils \
     device-mapper-persistent-data \
     lvm2
 
@@ -27,25 +27,25 @@ sudo yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 
 sudo yum makecache fast
-sudo yum install -y http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.42-1.gitad8f0f7.el7.noarch.rpm
-sudo yum install -y http://mirror.centos.org/centos/7/extras/x86_64/Packages/pigz-2.3.3-1.el7.centos.x86_64.rpm
+sudo yum install -y -q http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.42-1.gitad8f0f7.el7.noarch.rpm
+sudo yum install -y -q http://mirror.centos.org/centos/7/extras/x86_64/Packages/pigz-2.3.3-1.el7.centos.x86_64.rpm
 
 #Installing RH's fork of docker 1.13.1
-sudo yum install -y docker
+sudo yum install -y -q docker
 sudo ln -s /usr/libexec/docker/docker-runc-current /usr/libexec/docker/docker-runc
 sudo ln -s ../../usr/libexec/docker/docker-proxy-current /usr/bin/docker-proxy
 
 sudo systemctl start docker
 sudo systemctl enable docker
 
-sudo yum install -y wget
-sudo yum install -y git
-sudo yum install -y unzip
-sudo yum install -y curl
-sudo yum install -y xz
-sudo yum install -y ipset
-sudo yum install -y bind-utils
-sudo yum install -y ntp
+sudo yum install -y -q wget
+sudo yum install -y -q git
+sudo yum install -y -q unzip
+sudo yum install -y -q curl
+sudo yum install -y -q xz
+sudo yum install -y -q ipset
+sudo yum install -y -q bind-utils
+sudo yum install -y -q ntp
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
 sudo getent group nogroup || sudo groupadd nogroup

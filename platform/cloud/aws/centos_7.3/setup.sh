@@ -16,16 +16,16 @@ sudo tee /etc/systemd/system/docker.service.d/override.conf <<- EOF
 ExecStart=
 ExecStart=/usr/bin/docker daemon --storage-driver=overlay
 EOF
-sudo yum install -y docker-engine-1.13.1
+sudo yum install -y -q docker-engine-1.13.1
 sudo systemctl start docker
 sudo systemctl enable docker
-sudo yum install -y wget
-sudo yum install -y git
-sudo yum install -y unzip
-sudo yum install -y curl
-sudo yum install -y xz
-sudo yum install -y ipset
-sudo yum install -y ntp
+sudo yum install -y -q wget
+sudo yum install -y -q git
+sudo yum install -y -q unzip
+sudo yum install -y -q curl
+sudo yum install -y -q xz
+sudo yum install -y -q ipset
+sudo yum install -y -q ntp
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
 sudo getent group nogroup || sudo groupadd nogroup
