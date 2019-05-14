@@ -21,16 +21,16 @@ ExecStartPre=-/sbin/ip link del docker0
 ExecStart=
 ExecStart=/usr/bin/docker daemon --storage-driver=overlay -H fd://
 EOF
-sudo yum install -y docker-engine-1.11.2
+sudo yum install -y -q docker-engine-1.11.2
 sudo systemctl start docker
 sudo systemctl enable docker
-sudo yum install -y wget
-sudo yum install -y git
-sudo yum install -y unzip
-sudo yum install -y curl
-sudo yum install -y xz
-sudo yum install -y ipset
-sudo yum install -y ntp
+sudo yum install -y -q wget
+sudo yum install -y -q git
+sudo yum install -y -q unzip
+sudo yum install -y -q curl
+sudo yum install -y -q xz
+sudo yum install -y -q ipset
+sudo yum install -y -q ntp
 sudo systemctl enable ntpd
 sudo systemctl start ntpd
 sudo getent group nogroup || sudo groupadd nogroup
