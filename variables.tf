@@ -5,7 +5,7 @@ variable "provider" {
 
 variable "os" {
   description = "Operating system to use"
-  default     = "centos_7.4"
+  default     = "centos_7.6"
 }
 
 variable "region" {
@@ -96,6 +96,24 @@ variable "aws_ami" {
     centos_7.5_us-east-2      = "ami-9c0638f9"
     centos_7.5_us-west-1      = "ami-4826c22b"
     centos_7.5_us-west-2      = "ami-3ecc8f46"
+
+    # CentOS 7.6 (1901)
+    centos_7.6_eu-north-1     = "ami-5ee66f20"
+    centos_7.6_ap-south-1     = "ami-02e60be79e78fef21"
+    centos_7.6_eu-west-3      = "ami-0e1ab783dc9489f34"
+    centos_7.6_eu-west-2      = "ami-0eab3a90fc693af19"
+    centos_7.6_eu-west-1      = "ami-0ff760d16d9497662"
+    centos_7.6_ap-northeast-2 = "ami-06cf2a72dadf92410"
+    centos_7.6_ap-northeast-1 = "ami-045f38c93733dd48d"
+    centos_7.6_sa-east-1      = "ami-0b8d86d4bf91850af"
+    centos_7.6_ca-central-1   = "ami-033e6106180a626d0"
+    centos_7.6_ap-southeast-1 = "ami-0b4dd9d65556cac22"
+    centos_7.6_ap-southeast-2 = "ami-08bd00d7713a39e7d"
+    centos_7.6_eu-central-1   = "ami-04cf43aca3e6f3de3"
+    centos_7.6_us-east-1      = "ami-02eac2c0129f6376b"
+    centos_7.6_us-east-2      = "ami-0f2b4fc905b0bd1f1"
+    centos_7.6_us-west-1      = "ami-074e2d6769f445be5"
+    centos_7.6_us-west-2      = "ami-01ed306a12b7d1c96"
 
     # CoreOS 835.13.0
     coreos_835.13.0_eu-west-1      = "ami-4b18aa38"
@@ -191,5 +209,58 @@ variable "aws_ami" {
     rhel_7.3_us-east-2      = "ami-11aa8c74"
     rhel_7.3_us-west-1      = "ami-e69ebc86"
     rhel_7.3_us-west-2      = "ami-b55a51cc"
+
+    # RHEL 7.4
+    rhel_7.4_ap-south-1     = "ami-5c2f7e33"
+    rhel_7.4_eu-west-3      = "ami-66d0661b"
+    rhel_7.4_eu-west-2      = "ami-b4b3a8d0"
+    rhel_7.4_eu-west-1      = "ami-ccb7d2b5"
+    rhel_7.4_ap-northeast-2 = "ami-90a201fe"
+    rhel_7.4_ap-northeast-1 = "ami-36f09350"
+    rhel_7.4_sa-east-1      = "ami-1a064a76"
+    rhel_7.4_ca-central-1   = "ami-71018415"
+    rhel_7.4_ap-southeast-1 = "ami-8d90e9f1"
+    rhel_7.4_ap-southeast-2 = "ami-e1996783"
+    rhel_7.4_eu-central-1   = "ami-8a21bfe5"
+    rhel_7.4_us-east-1      = "ami-76a3970c"
+    rhel_7.4_us-east-2      = "ami-cebe94ab"
+    rhel_7.4_us-west-1      = "ami-c8020fa8"
+    rhel_7.4_us-west-2      = "ami-1607ba6e"
+
+    # RHEL 7.5
+    rhel_7.5_eu-north-1     = "ami-5c39b622"
+    rhel_7.5_ap-south-1     = "ami-0aa4317636e016115"
+    rhel_7.5_eu-west-3      = "ami-039346fed23fb53ad"
+    rhel_7.5_eu-west-2      = "ami-0ac5fae255ddac6f6"
+    rhel_7.5_eu-west-1      = "ami-092acf20fad7f7795"
+    rhel_7.5_ap-northeast-2 = "ami-0d226f15e3e46903a"
+    rhel_7.5_ap-northeast-1 = "ami-0b517025bb2f0ad4a"
+    rhel_7.5_sa-east-1      = "ami-01c56172f9db84834"
+    rhel_7.5_ca-central-1   = "ami-fc20ad98"
+    rhel_7.5_ap-southeast-1 = "ami-09fc728e15fbfb535"
+    rhel_7.5_ap-southeast-2 = "ami-0a61d60bde3940420"
+    rhel_7.5_eu-central-1   = "ami-05ba90b00a46d83fa"
+    rhel_7.5_us-east-1      = "ami-0394fe9914b475c53"
+    rhel_7.5_us-east-2      = "ami-0376bbf9be9eac670"
+    rhel_7.5_us-west-1      = "ami-0bdc0ff10fb093057"
+    rhel_7.5_us-west-2      = "ami-096510cab1b6b2c6d"
+
+    # RHEL 7.6
+    rhel_7.6_eu-north-1     = "ami-8833bbf6"
+    rhel_7.6_ap-south-1     = "ami-0b105c57e305d9064"
+    rhel_7.6_eu-west-3      = "ami-08295de7534115935"
+    rhel_7.6_eu-west-2      = "ami-06fe0c124aedcef5f"
+    rhel_7.6_eu-west-1      = "ami-04c89a19fea29f1f0"
+    rhel_7.6_ap-northeast-2 = "ami-0f84aff229263c1fc"
+    rhel_7.6_ap-northeast-1 = "ami-0e3e6ca71a19ccf06"
+    rhel_7.6_sa-east-1      = "ami-06efd558d6a5fb959"
+    rhel_7.6_ca-central-1   = "ami-0a43efe505004e592"
+    rhel_7.6_ap-southeast-1 = "ami-031290b4bd9eaa715"
+    rhel_7.6_ap-southeast-2 = "ami-06d2821bfc76dcda3"
+    rhel_7.6_eu-central-1   = "ami-0fc86555914f6a9f2"
+    rhel_7.6_us-east-1      = "ami-08a7d2bfef687328f"
+    rhel_7.6_us-east-2      = "ami-0e166e72fda655c63"
+    rhel_7.6_us-west-1      = "ami-056efb42b219f9abb"
+    rhel_7.6_us-west-2      = "ami-02deb4589e0f0d95e"
   }
 }
