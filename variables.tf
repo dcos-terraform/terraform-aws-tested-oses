@@ -114,6 +114,8 @@ variable "aws_ami" {
     centos_7.6_us-east-2      = "ami-0f2b4fc905b0bd1f1"
     centos_7.6_us-west-1      = "ami-074e2d6769f445be5"
     centos_7.6_us-west-2      = "ami-01ed306a12b7d1c96"
+    centos_7.6_us-gov-west-1  = "ami-0f91f36e"
+    centos_7.6_us-gov-east-1  = "ami-7f3ddc0e"
 
     # CoreOS 835.13.0
     coreos_835.13.0_eu-west-1      = "ami-4b18aa38"
@@ -262,5 +264,7 @@ variable "aws_ami" {
     rhel_7.6_us-east-2      = "ami-0e166e72fda655c63"
     rhel_7.6_us-west-1      = "ami-056efb42b219f9abb"
     rhel_7.6_us-west-2      = "ami-02deb4589e0f0d95e"
+    rhel_7.6_us-gov-west-1  = "ami-5a740e3b"
+    rhel_7.6_us-gov-east-1  = "ami-43d63732"
   }
 }
