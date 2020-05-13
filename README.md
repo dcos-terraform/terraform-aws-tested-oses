@@ -18,7 +18,6 @@ module "dcos-tested-oses" {
 | aws\_ami | AMI that will be used for the instances instead of the Mesosphere chosen default images. Custom AMIs must fulfill the Mesosphere DC/OS system-requirements: See https://docs.mesosphere.com/1.12/installing/production/system-requirements/ | map | `<map>` | no |
 | aws\_default\_os\_user | Map OS name to default login user (e.g. centos -> centos, coreos -> coreos) | map | `<map>` | no |
 | os | Operating system to use | string | `"centos_7.6"` | no |
-| provider | Provider to use | string | `"aws"` | no |
 | region | region | string | `""` | no |
 
 ## Outputs
