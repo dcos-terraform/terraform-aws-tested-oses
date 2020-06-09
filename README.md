@@ -26,4 +26,3 @@ module "dcos-tested-oses" {
 |------|-------------|
 | aws\_ami | AMI that will be used for the instances instead of the Mesosphere chosen default images. Custom AMIs must fulfill the Mesosphere DC/OS system-requirements: See https://docs.mesosphere.com/1.12/installing/production/system-requirements/ |
 | user | User |
-
