@@ -1,7 +1,7 @@
 /**
  * AWS Tested OSes
  * ============
- * This module returns for an given OS the AMI aswell as its default user and the prerequisits script
+ * This module returns for an given OS the AMI aswell as its default user
  *
  *
  * EXAMPLE
@@ -9,7 +9,7 @@
  *```hcl
  * module "dcos-tested-oses" {
  *   source  = "terraform-dcos/tested-oses/aws"
- *   version = "~> 0.1.0"
+ *   version = "~> 0.2.0"
  * }
  *```
  */
@@ -17,10 +17,6 @@
 provider "aws" {}
 
 data "aws_region" "current" {}
-
-data "template_file" "os-setup" {
-  template = "${file("${path.module}/platform/cloud/${var.provider}/${var.os}/setup.sh")}"
-}
 
 data "template_file" "aws_ami" {
   template = "$${aws_ami_result}"
